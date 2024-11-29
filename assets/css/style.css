@@ -1,0 +1,156 @@
+
+body {
+    background: linear-gradient(to bottom right, white, black);
+    height: 100vh;
+    background-attachment: fixed; /* Fixes the gradient to viewport */
+    background-size: cover; /* Ensures it covers the full screen */
+    margin: 0; /* Removes unwanted margin */
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-nav .nav-link.active {
+    color: brown;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link:hover {
+    color: brown;
+}
+
+  /* Adjust dropdown styles for better appearance */
+  .nav-item .dropdown-menu {
+    top: 100%;
+    left: 0;
+    margin-top: 0.5rem;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+  }
+  
+
+ /* Carousel Header */
+.carousel-header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Carousel Item Image */
+.carousel-item img {
+    object-fit: cover;
+    height: 100vh;
+    width: 100%; /* Ensure the image fills the container width */
+    border-bottom: 10px solid #8C0D0D;
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+@media (max-width: 768px) {
+    /* Adjust carousel image height for smaller screens */
+    .carousel-item img {
+        height: 50vh; /* Set a smaller height for images on mobile */
+    }
+    
+    /* Adjust carousel header height */
+    .carousel-header {
+        height: auto; /* Allow the header to adjust for smaller devices */
+    }
+}
+
+/* Further adjustments for very small screens (phones) */
+@media (max-width: 480px) {
+    /* Ensure the image still fits well and doesn't overflow */
+    .carousel-item img {
+        height: 40vh; /* Reduce image height further for smaller phones */
+    }
+}
+
+.center-text {
+    text-align: left;
+    padding-left: 20px;
+    margin-top: 50px;
+}
+
+.center-text h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #8C0D0D;
+}
+
+.center-text h3{
+    margin-top: 40px;
+    font-weight: 700;
+}
+
+.center-text p{
+    font-weight: 600;
+}
+
+.logo-image {
+    max-width:100%;
+    height: 85%;
+    position: absolute;
+    right: 3%;
+    top: 800px;
+}
+
+/* Reposition the logo image in responsive view */
+@media (max-width: 768px) {
+    .logo-image {
+        position: relative; /* Change to relative for proper stacking order */
+        top: -170px; /* Reset the top position */
+        right: 0; /* Center-align horizontally if needed */
+        margin: 0 auto; /* Center it within the container */
+        display: block; /* Ensure proper behavior in responsive view */
+        position: relative; /* Ensure it stacks properly */
+    }
+
+    .center-text {
+        text-align: center; /* Adjust text alignment for responsiveness */
+        padding: 20px; /* Add padding for better spacing */
+        margin-top: -10px;
+    }
+
+    .center-text h1,
+    .center-text h3,
+    .center-text p {
+        margin-top: 20px; /* Ensure enough spacing between elements */
+        font-weight: bold; /* Make the text bold */
+    }
+}
+
+
+/* Centering Button */
+.button {
+    background-color: #8C0D0D;
+    color: white;
+    border: 3px solid black;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;        /* Ensures button is treated as block-level element */
+    margin: 0 auto;        /* Horizontally centers the button */
+    text-align: center;    /* Ensures text is centered inside button */
+    width: max-content;    /* Adjusts width based on content size */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .button {
+        font-size: 14px; /* Reduce button text size on smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+
+.bottom-page {
+    text-align: center;
+    padding: 30px 0;
+    color: white;
+    background-color: rgb(60, 60, 60);
+    border-top: 5px solid white;
+  }
+
+
+
+
