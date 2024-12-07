@@ -1,0 +1,19 @@
+body {
+    background: linear-gradient(to bottom right, white, black);
+    height: 100vh;
+    background-attachment: fixed; /* Fixes the gradient to viewport */
+    background-size: cover; /* Ensures it covers the full screen */
+    margin: 0; /* Removes unwanted margin */
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+.navbar-nav .nav-link.active {
+    color: brown;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link:hover {
+    color: brown;
+}
